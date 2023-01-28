@@ -7,6 +7,7 @@ export default defineNuxtConfig({
         "@/assets/css/global.css",
     ],
     runtimeConfig: {
-        DB_URI: process.env.MONGODB_URI || "mongodb://localhost/blog"
+        DB_URI: process.env.MONGODB_URI || "mongodb://localhost/blog",
+        PASSWORD: process.env.PASSWORD || "test123",
     }
 })

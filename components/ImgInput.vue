@@ -7,13 +7,13 @@ const data = ref({} as Image);
 </script>
 
 <template>
-  <div class="img-container">
-    <label for="img-src">
+  <div>
+    <label>
       <h3>Img File Name:</h3>
       <input type="text" class="img-src" required v-model="data.path"/>
     </label>
 
-    <label for="img-text">
+    <label>
       <h3>Img Text:</h3>
       <input type="text" class="img-text" required v-model="data.text"/>
     </label>
@@ -26,3 +26,14 @@ const data = ref({} as Image);
     </button>
   </div>
 </template>
+
+<style scoped>
+div {
+  background-color: rgb(230, 227, 227);
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+</style>
